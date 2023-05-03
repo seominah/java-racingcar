@@ -1,7 +1,5 @@
 package carracing;
 
-import carracing.domain.Car;
-import carracing.domain.Winner;
 import carracing.view.InputView;
 import carracing.view.ResultView;
 
@@ -23,7 +21,7 @@ public class Game {
         }
 
         Winner winners = new Winner(raceCars);
-        System.out.println(resultView.printWinner(winners.addWinners()));
+        System.out.println(resultView.printWinner(winners.getWinners()));
     }
 
     public static List<Car> participate(List<String> carNameList) {

@@ -1,7 +1,6 @@
 package carracing.view;
 
-import carracing.domain.Car;
-import carracing.domain.Name;
+import carracing.Car;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

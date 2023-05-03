@@ -1,6 +1,6 @@
 package carracing.view;
 
-import carracing.domain.Car;
+import carracing.Car;
 
 import java.util.List;
 import java.util.StringJoiner;

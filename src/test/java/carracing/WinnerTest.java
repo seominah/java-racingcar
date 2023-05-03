@@ -1,9 +1,5 @@
-package carracing.domain;
+package carracing;
 
-import carracing.domain.Car;
-import carracing.domain.Name;
-import carracing.domain.Position;
-import carracing.domain.Winner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,7 +28,7 @@ class WinnerTest {
     @Test
     void findWinner() {
         Winner winners = new Winner(cars);
-        List<String> result = winners.addWinners().stream()
+        List<String> result = winners.getWinners().stream()
                 .map(Car::getName)
                 .collect(Collectors.toList());
         assertThat(result).contains("pobi");

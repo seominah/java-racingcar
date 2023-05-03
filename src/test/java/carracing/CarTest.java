@@ -1,7 +1,5 @@
-package carracing.domain;
+package carracing;
 
-import carracing.domain.Car;
-import carracing.domain.Name;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -35,8 +33,7 @@ public class CarTest {
     @ParameterizedTest
     @ValueSource(ints = {4, 5, 6, 7, 8, 9})
     void move_over4(int number) {
-        pobi.move(number);
-        assertEquals(pobi.getPosition(), 1);
+        assertEquals(pobi.move(number), 1);
     }
 
     @DisplayName("속도가 3이하이면 위치가 변하지 않는다.")
